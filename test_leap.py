@@ -1,10 +1,10 @@
 import unittest
 import leap
 
-class TestFizzbuzzTestCase(unittest.TestCase):
+class TestLeapTestCase(unittest.TestCase):
 
 
-    def test_fizzbuzz(self):
+    def test_leap(self):
         self.assertEqual(leap.leap(2000), "Leap year!");
         self.assertEqual(leap.leap(7), "Not a leap year");
         self.assertEqual(leap.leap(2004),  "Leap year!");
