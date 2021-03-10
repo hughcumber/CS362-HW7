@@ -1,11 +1,14 @@
 import unittest
+import fizzbuzz
 
-class TestFizzbuzz(unittest.TestCase):
+class TestFizzbuzzTestCase(unittest.TestCase):
 
 
     def test_fizzbuzz(self):
-        ret_array = fizzbuzz();
-        self.assertEqual(ret_array[2], "Fizz");
+        self.assertEqual(fizzbuzz.fizzbuzz(3), "Fizz");
+        self.assertEqual(fizzbuzz.fizzbuzz(7), 7);
+        self.assertEqual(fizzbuzz.fizzbuzz(15), "FizzBuzz");
+        self.assertEqual(fizzbuzz.fizzbuzz(100), "Buzz");
 
 
 
